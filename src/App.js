@@ -2,8 +2,8 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
-  return (
-    <div className="App">
+  return (                                              // 사용자정의함수는 반드시 return이 들어가야함. 최소 return 1개. return에는 tag하나만 있어야함. (자식들 포함 div 하나 있어야 함. root div에 1개만 붙을 수 있음.)
+    <div className="App">                            
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
@@ -23,3 +23,5 @@ function App() {
 }
 
 export default App;
+
+//className = html css의 class 기능
