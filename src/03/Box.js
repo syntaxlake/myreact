@@ -9,7 +9,7 @@ const Box = () => {
                 <header><h1>일일박스오피스</h1></header>
                 <table>
   <thead>
-    <tr>
+    <tr className="cl">
       <th scope="col">순위</th>
       <th scope="col">영화명</th>
       <th scope="col">매출액</th>
