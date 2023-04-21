@@ -1,6 +1,5 @@
 import MyClockimage from "./MyClockimage";
 import MyClockTime from "./MyClockTime";
-import Hello from "../01/Hello";
 
 const MyClock = () => {
 
