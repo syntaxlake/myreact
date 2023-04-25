@@ -11,6 +11,7 @@
         if (intent === 0) icon = '⏺' ;
         else if (intent < 0) icon = '🔽' ;
         else icon = '🔼' ;
+        
         trTags.push(
             <tr className="mytr" key={row.movieCd}>
                 <td>{row.rank}</td>
