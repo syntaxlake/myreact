@@ -1,8 +1,19 @@
-.td3{
-    text-align:right;
-    justify-content:right;
+.td5{
+    text-align: center;
 }
-.cl{
-    text-align: right;
-    justify-content:right;
+
+tfoot{
+    background-color: coral;
+    display:inline-flex;
+    height:30px;
+}
+.tempsp2{
+    background-color: cadetblue;
+    display:inline-flex;
+    height:30px;
+}
+.tempsp3{
+    background-color: goldenrod;
+    display:inline-flex;
+    height:30px;
 }
