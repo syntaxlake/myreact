@@ -9,9 +9,10 @@ import { useState } from "react";
 //매개변수를 probs 사용하지 않고 오브젝트에 매개변수명을 넣어서 사용
 
 const MyDivArticle = ({aname}) => {
-    let n = (aname === undefined) ? '0' : aname.slice(-1) ;     //const aname = probs.aname;
+    let n = (aname === undefined) ? '0' : aname.slice(-1) ;      //const aname = probs.aname;
     // undefined되었다면 0, 그렇지 않으면 aname에서 하나를 빼서 표현. 
     //let cnt = 0 ;   // 한번 렌더링이 되면 바꿀수 없음. 변수가 바뀔 때마다 재랜더링 필요. 
+    // 사용자 정의 속성. (Probs)
 
 //state 변수 사용 2단계 : 변수 선언 (배열 형식. 반드시 대괄호 사용. ) (재렌더링하여 수정해야할 경우 stateUse함수로 사용. )
     const [cnt, setCnt] = useState(0) ; //cnt =1 등 안됨, set배열로 바꿈., return값 2개. (cnt, setCnt) -> 구조분해. 
