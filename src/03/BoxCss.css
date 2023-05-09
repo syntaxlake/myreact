@@ -3,7 +3,7 @@
 }
 
 tfoot{
-    background-color: coral;
+    background-color: rgb(78, 162, 177);
     display:inline-flex;
     height:30px;
 }
