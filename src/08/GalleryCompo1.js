@@ -4,7 +4,7 @@ const GalleryCompo1 = ({ tour }) => {
     <div>
       {tour.map((item) => {
         console.log(item.galTitle, item.galWebImageUrl, item.galPhotographyLocation);
-        // Replace "http://" with "https://" (http시 방화벽 발동)
+        // Replace "http://" -> "https://" (http시 방화벽 발동)
         const imageUrl = item.galWebImageUrl.replace("http://", "https://");
         return (
           <div key={item.galTitle}>
