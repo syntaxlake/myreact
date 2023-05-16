@@ -1,0 +1,19 @@
+.btDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btDiv > button {
+    margin-left: 5px;
+}
+
+.gt {
+    font-style:italic;
+    font-size: large;
+}
+    
+.header {
+    background-image: url('/bgimage.jpg');
+    width: 1000px;
+}
