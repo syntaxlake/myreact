@@ -1,4 +1,4 @@
-import { BrowserRouter, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { useState, useEffect, useRef } from 'react';
 import xy from './getxy.json';
 
@@ -45,17 +45,18 @@ const FcstMain = () => {
   };
 
     const getSel = () => {
-    let temp = xy.filter((item)=> (item)["행정구역코드"] ===parseInt(sel1.current.value));
+    let temp = xy.find((item)=> (item)["행정구역코드"] === parseInt(sel1.current.value));
     console.log(temp);
+    if (temp) {
     setArea(temp["1단계"]);
     setX(temp["격자 X"]);
     setY(temp["격자 Y"]);
-}
+    }
+  }
   
 
 
     return(
-        <BrowserRouter>
           <main className='container'>
                <article>
                     <header>
@@ -77,13 +78,12 @@ const FcstMain = () => {
                                 <option value=''>선택</option>
                                 {ops}
                             </select>
-                            <Link to={`/ultra/${dt}/${area}${x}${y}`} role='button'> 초단기예보</Link> 
-                            <Link to={`/vilage/${dt}/${area}${x}${y}`} role='button'> 단기예보</Link> 
+                            <Link to={`/ultra/${dt}/${area}/${x}/${y}`} role='button'> 초단기예보</Link>
+                            <Link to={`/village/${dt}/${area}/${x}/${y}`} role='button'> 단기예보</Link> 
                     </div>
                 
             </article>
             </main>
-            </BrowserRouter>
     );
 };
 export default FcstMain;
