@@ -1,5 +1,8 @@
-import { useState , useEffect} from "react"
-const UltraFcst = ({items, gubun}) => {
+import { useState , useEffect} from "react";
+import code from './getcode.json';
+import FcstTable from './FcstTable' ;
+
+const VillageFcst = () => {
     const [items, setItems] = useState() 
     useEffect(()=> {
       
@@ -24,7 +27,7 @@ const UltraFcst = ({items, gubun}) => {
     }, []) ; 
 
 
-    useEffect(()=>{ //4. dependency area에 items를 넣고 item이 변한 상황을 확인
+    useEffect(()=>{ 
         
     }, [items]); 
 

@@ -1,6 +1,6 @@
 import { useState , useEffect, useRef } from "react"
 import code from "./getcode.json" // getcode 가지고와서 radiobox 만드는데 씀. 
-const FcstTable = (items, gubun) => {
+const FcstCopy = (items, gubun) => {
     //2. useState변수 : 변수값이 변경이 되면 재 렌더링이 일어남. fetch에 따라 바꿔옴 
     const [items, setItems] = useState() ;           //변경을 위해서는 set을 붙여야함. //fetch 끝나면 items가 바뀜. 
     const [trTags, settrTags] = useState () ; //기상정보 끌어온게 달라지므로 use state. 
@@ -108,4 +108,4 @@ const FcstTable = (items, gubun) => {
     )               // 8. items가 있으면 trtags를 만듬.-> items && trTags items값을 가져오면 trtags가 만들어짐. 
 }
 
-export default FcstTable;
+export default FcstCopy;

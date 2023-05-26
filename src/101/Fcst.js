@@ -1,13 +1,13 @@
 import UltraFcst from './Fcst'
 import VillageFcst from './VillageFcst' 
-const FcstTable = ({items, gubun}) => {
+const Fcst = () => {
    
-    return (                       
-        <>
-           <UltraFcst/>
-           <VillageFcst/>
+    return (      
+        <>                 
+        <VillageFcst />
+        <UltraFcst/>
         </>
     )               
 }
 
-export default FcstTable;
+export default Fcst;
